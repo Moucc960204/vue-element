@@ -58,6 +58,8 @@ export default {
               //const {data:res} = await this.$http.post('login', this.form);
               this.$message.success("成功");
               //this.$message.error("失败");
+              window.sessionStorage.setItem("token", "111");
+              this.$router.push('/home');
           });
       }
   }
